@@ -24,3 +24,7 @@ Thumbs.db
 # Flask
 instance/
 *.sqlite3
+
+# Project reports (keep local only)
+PROJECT_REPORT.md
+PhishGuard_Project_Report.docx
