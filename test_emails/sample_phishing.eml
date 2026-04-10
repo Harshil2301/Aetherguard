@@ -1,0 +1,32 @@
+MIME-Version: 1.0
+Received: from mail.paypal-support-verify.xyz (mail.paypal-support-verify.xyz [185.220.101.34])
+        by mx.yourcompany.com with ESMTP id abc123
+        for <internal-team@yourcompany.com>;
+        Thu, 9 Apr 2026 11:30:00 +0530
+Authentication-Results: mx.yourcompany.com;
+       dkim=fail (signature verification failed) header.d=paypal-support-verify.xyz;
+       spf=fail (domain of admin@paypal-support-verify.xyz does not designate 185.220.101.34 as permitted sender) smtp.mailfrom=admin@paypal-support-verify.xyz;
+       dmarc=fail (p=REJECT) header.from=paypal-support-verify.xyz
+From: "PayPal Security" <admin@paypal-support-verify.xyz>
+To: internal-team@yourcompany.com
+Subject: URGENT: Your PayPal Account Has Been Suspended
+Date: Thu, 9 Apr 2026 11:30:00 +0530
+Message-ID: <fake-message-id-001@paypal-support-verify.xyz>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Valued Customer,
+
+We have detected suspicious activity on your PayPal account. Your account =
+has been temporarily suspended for your protection.
+
+To restore full access, please verify your identity immediately by clicking=
+ the link below:
+
+http://bit.ly/secure-paypal-login-832
+
+WARNING: Failure to verify within 24 hours will result in permanent account=
+ termination.
+
+Sincerely,
+PayPal Security Team
