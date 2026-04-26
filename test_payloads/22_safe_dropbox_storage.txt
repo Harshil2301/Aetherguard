@@ -1,0 +1,12 @@
+Dear User,
+
+Your Dropbox storage is 98% full (4.92 GB of 5 GB used).
+
+Upgrade to Dropbox Plus for 2 TB of storage at just $9.99/month and keep all your files safe.
+
+Or, to free up space, you can delete files: https://www.dropbox.com/manage-space
+
+As a reminder, when your storage is full, new files will stop syncing across your devices.
+
+The Dropbox Team
+https://www.dropbox.com

@@ -1,0 +1,21 @@
+Received: from mail.hacker-relay.cn (mail.hacker-relay.cn [103.45.12.8])
+From: it-support@yourcompany-helpdesk.com
+To: all-staff@yourcompany.com
+Subject: REQUIRED: IT Security Compliance Password Reset
+Date: Mon, 21 Apr 2026 07:30:00 +0000
+Authentication-Results: spf=fail; dkim=fail; dmarc=fail
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Dear Employee,
+
+As part of our Annual Security Compliance Audit (SOC-2 renewal), all employees are required to reset their corporate passwords before April 25th, 2026.
+
+Please click the link below to reset your password using your existing credentials:
+http://it-helpdesk-yourcompany.net/reset?uid=18743&dept=all
+
+This is MANDATORY. Accounts that are not updated will be locked and IT will be notified.
+
+Thank you for your cooperation.
+
+IT Security & Compliance Team

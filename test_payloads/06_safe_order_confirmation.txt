@@ -1,0 +1,17 @@
+From: no-reply@amazon.com
+To: customer@gmail.com
+Subject: Your Amazon order #112-8743291-5930642 has shipped!
+
+Hi there,
+
+Your order has been shipped and is on its way!
+
+Order: #112-8743291-5930642
+Estimated delivery: April 24, 2026
+Carrier: UPS | Tracking: 1Z999AA10123456784
+
+Track your package: https://www.amazon.com/progress-tracker/package/ref=pe_3111091_275494361
+
+Thank you for shopping with Amazon.
+
+Amazon.com Customer Service

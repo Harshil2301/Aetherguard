@@ -1,0 +1,17 @@
+Hi Team,
+
+As discussed in our standup, the sprint planning session has been rescheduled to Thursday 10 AM IST.
+
+Agenda:
+1. Velocity review from last sprint
+2. Backlog grooming — priority items
+3. Story point estimation for new features
+4. Blocker identification
+
+I've updated the Jira board with the new tickets. Please review your assigned items before the call.
+
+Google Meet link: https://meet.google.com/abc-defg-hij
+
+Thanks,
+Priya
+Engineering Lead

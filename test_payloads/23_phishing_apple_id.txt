@@ -1,0 +1,12 @@
+IMPORTANT SECURITY NOTICE — Apple ID Suspended
+
+Your Apple ID (victim@icloud.com) has been suspended due to unusual activity detected in your account.
+
+A purchase of $399.99 was attempted from your Apple ID from a device in China. This transaction has been blocked.
+
+To prevent further unauthorized use and restore your account, verify your information immediately:
+http://appleid-security-restore.com/verify?apple_id=victim@icloud.com&region=IN
+
+You have 24 hours to verify before your account is permanently disabled and all associated iCloud data is erased.
+
+Apple Security Team

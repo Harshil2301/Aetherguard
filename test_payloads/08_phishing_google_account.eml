@@ -1,0 +1,21 @@
+Received: from mail.spoofed-google.net (mail.spoofed-google.net [185.220.101.45])
+From: security-noreply@google.com
+To: target@company.com
+Subject: Critical: Sign-in attempt blocked on your Google Account
+Date: Tue, 21 Apr 2026 08:14:22 +0000
+Authentication-Results: mx.google.com; spf=fail (domain of security-noreply@google.com does not designate 185.220.101.45 as permitted sender); dkim=fail; dmarc=fail
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+We blocked a suspicious sign-in attempt to your Google account from:
+
+Location: Kyiv, Ukraine
+Device: Unknown Linux system
+Time: April 21, 2026 at 08:13 AM UTC
+
+If this was not you, your account may be compromised. Immediately secure your account:
+https://accounts.google-secure-login.net/recovery?uid=84729&token=Xk29djQ
+
+Failure to act within 24 hours will result in account suspension.
+
+The Google Security Team

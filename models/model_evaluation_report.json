@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-04-26T07:38:26.409556Z",
+  "model_phase": 2,
+  "dataset": "Kaggle 6-Corpus (Enron+Nazario+SpamAssassin+CEAS+Ling+Nigerian Fraud) \u2014 82,486 emails",
+  "threshold": 0.3269,
+  "main_benchmark": {
+    "sample_size": 5000,
+    "accuracy": 0.694,
+    "phishing_precision": 0.6461,
+    "phishing_recall": 0.5664,
+    "f1_score": 0.6036,
+    "false_positive_rate_pct": 21.68,
+    "legitimate_recall_pct": 78.32,
+    "confusion_matrix": {
+      "TN": 2305,
+      "FP": 638,
+      "FN": 892,
+      "TP": 1165
+    }
+  },
+  "financial_fp_benchmark": {
+    "total_emails": 20,
+    "correctly_cleared": 12,
+    "false_positives": 8,
+    "pass_rate_pct": 60.0
+  },
+  "phishing_detection_benchmark": {
+    "total_emails": 15,
+    "correctly_flagged": 11,
+    "false_negatives": 4,
+    "detection_rate_pct": 73.3
+  }
+}

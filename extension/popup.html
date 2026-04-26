@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AetherGuard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 320px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #080c14;
+      color: #d1d5db;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0d1117, #111827);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 18px 18px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-box {
+      width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0;
+      background: linear-gradient(135deg, #22d3ee, #7c3aed);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 16px rgba(34,211,238,0.3);
+    }
+    .header h1 {
+      font-size: 13px; font-weight: 900;
+      letter-spacing: 0.18em; color: white;
+      text-transform: uppercase;
+    }
+    .header p { font-size: 10px; color: #4b5563; margin-top: 2px; }
+
+    /* ── Status Row ── */
+    .status-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      background: rgba(255,255,255,0.02);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .status-dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+      background: #6b7280;
+    }
+    .status-dot.online  { background: #10b981; box-shadow: 0 0 8px #10b981; }
+    .status-dot.offline { background: #ef4444; box-shadow: 0 0 8px #ef4444; }
+    .status-text { font-size: 11px; font-family: monospace; color: #6b7280; }
+    .status-text.online  { color: #10b981; }
+    .status-text.offline { color: #ef4444; }
+
+    /* ── Last Scan Card ── */
+    .section { padding: 14px 18px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .section-title {
+      font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: #374151; margin-bottom: 10px;
+    }
+
+    .scan-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+    .scan-verdict {
+      font-size: 13px; font-weight: 800; margin-bottom: 6px;
+    }
+    .scan-score-row {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 8px;
+    }
+    .scan-score-label { font-size: 10px; color: #4b5563; }
+    .scan-score-val { font-size: 18px; font-weight: 900; }
+    .scan-bar-track {
+      height: 3px; background: rgba(255,255,255,0.06);
+      border-radius: 99px; overflow: hidden; margin-bottom: 8px;
+    }
+    .scan-bar { height: 3px; border-radius: 99px; transition: width 0.5s ease; }
+    .scan-reason {
+      font-size: 10px; color: #374151; line-height: 1.5;
+      border-left: 2px solid rgba(255,255,255,0.07);
+      padding-left: 8px;
+    }
+    .scan-time { font-size: 9px; color: #1f2937; margin-top: 6px; text-align: right; }
+    .no-scan { font-size: 11px; color: #374151; text-align: center; padding: 8px 0; }
+
+    /* ── Token Input ── */
+    .token-input-row {
+      display: flex; gap: 6px; align-items: center;
+    }
+    .token-input {
+      flex: 1; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 7px;
+      color: #d1d5db; font-size: 11px; padding: 7px 10px;
+      font-family: monospace; outline: none;
+    }
+    .token-input::placeholder { color: #374151; }
+    .token-input:focus { border-color: rgba(34,211,238,0.3); }
+    .token-btn {
+      background: linear-gradient(135deg, #22d3ee, #7c3aed);
+      border: none; border-radius: 7px; color: white;
+      font-size: 10px; font-weight: 700; padding: 7px 10px;
+      cursor: pointer; letter-spacing: 0.05em; white-space: nowrap;
+    }
+    .token-btn:hover { opacity: 0.85; }
+    .token-saved {
+      font-size: 10px; color: #10b981; text-align: center;
+      margin-top: 6px; display: none;
+    }
+
+    /* ── Buttons ── */
+    .footer { padding: 14px 18px; display: flex; flex-direction: column; gap: 8px; }
+    .btn {
+      display: block; width: 100%; padding: 10px;
+      background: linear-gradient(135deg, #22d3ee18, #7c3aed18);
+      border: 1px solid rgba(34,211,238,0.2); border-radius: 8px;
+      color: #22d3ee; font-size: 11px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      cursor: pointer; text-align: center; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #22d3ee30, #7c3aed30);
+      border-color: rgba(34,211,238,0.4);
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, #22d3ee, #7c3aed);
+      border: none; color: white;
+    }
+    .btn.primary:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-box">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+    </div>
+    <div>
+      <h1>AetherGuard</h1>
+      <p>Real-time Email Threat Detection</p>
+    </div>
+  </div>
+
+  <!-- Backend Status -->
+  <div class="status-row">
+    <div class="status-dot" id="statusDot"></div>
+    <span class="status-text" id="statusText">Checking backend…</span>
+  </div>
+
+  <!-- Last Scan Result -->
+  <div class="section">
+    <div class="section-title">Last Scan Result</div>
+    <div id="lastScan" class="scan-card">
+      <div class="no-scan">No scan yet — open an email in Gmail</div>
+    </div>
+  </div>
+
+  <!-- Auth Token -->
+  <div class="section">
+    <div class="section-title">Link to Dashboard (optional)</div>
+    <div class="token-input-row">
+      <input class="token-input" id="tokenInput" type="password" placeholder="Paste your AetherGuard token…">
+      <button class="token-btn" id="saveToken">SAVE</button>
+    </div>
+    <div class="token-saved" id="tokenSaved">✓ Token saved — scans linked to your account!</div>
+  </div>
+
+  <!-- Footer Buttons -->
+  <div class="footer">
+    <a href="http://localhost:5173/dashboard" target="_blank" class="btn primary">Open Dashboard</a>
+    <a href="https://mail.google.com" target="_blank" class="btn">Open Gmail</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

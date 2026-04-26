@@ -1,0 +1,17 @@
+Hello,
+
+Your LinkedIn profile appeared in 14 searches this week.
+
+You have 3 new connection requests and 2 unread messages in your inbox.
+
+See who's looking at your profile:
+https://www.linkedin.com/in/notifications/?type=profile_view
+
+Also, based on your experience in Machine Learning, here are jobs recommended for you:
+- ML Engineer at Stripe (Remote)
+- AI Research Lead at DeepMind (London)
+- Data Scientist at JP Morgan (Mumbai)
+
+View all recommended jobs: https://www.linkedin.com/jobs/recommendations/
+
+The LinkedIn Team

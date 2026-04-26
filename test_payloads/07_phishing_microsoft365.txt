@@ -1,0 +1,14 @@
+ACTION REQUIRED: Your Microsoft 365 subscription has EXPIRED
+
+Dear Valued Customer,
+
+We attempted to charge your credit card on file but the payment was DECLINED.
+
+Your Microsoft 365 subscription expired on April 19, 2026. All your files in OneDrive, SharePoint, and Outlook will be PERMANENTLY DELETED in 48 hours unless you update your payment.
+
+Click here immediately to update your billing and save your data:
+http://microsoft-account-billing-update.xyz/renew?id=28374
+
+DO NOT IGNORE THIS EMAIL. This is your final warning.
+
+Microsoft Billing Team

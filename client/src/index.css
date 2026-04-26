@@ -1,5 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
 
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+  --cyan: #22d3ee;
+  --violet: #a78bfa;
+  --bg: #040c1a;
+}
+
+/* ─── Gradient text (email security: cyan → electric blue → violet) ─── */
+.gradient-text {
+  background: linear-gradient(120deg, #22d3ee 0%, #3b82f6 40%, #a78bfa 80%, #e879f9 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ─── Glass morphism ─── */
+.glass {
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Floating envelope animation ─── */
+@keyframes float-up {
+  0%   { transform: translateY(0px) rotate(0deg); opacity: 0.08; }
+  50%  { opacity: 0.15; }
+  100% { transform: translateY(-120px) rotate(8deg); opacity: 0; }
+}
+
+.envelope-float {
+  animation: float-up linear infinite;
+  pointer-events: none;
+}
+
+/* ─── Pulse ring ─── */
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
 :root {
     --bg-dark: #050505;
     --panel-bg: rgba(20, 20, 25, 0.6);
@@ -23,14 +73,19 @@
 }
 
 /* ===========================
-   Base — Fixed 100vh, no page scroll
+   Base — allows landing page to scroll
+   Scroll-lock is scoped to .dashboard-layout below
    =========================== */
 html, body {
-    height: 100%;
-    overflow: hidden;
-    background-color: var(--bg-dark);
+    background-color: var(--bg);
     color: var(--text-main);
     font-family: 'Outfit', sans-serif;
+}
+
+/* Dashboard gets fixed full-height, no scroll on body */
+.dashboard-layout-root {
+    height: 100vh;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, .crypto-text {
@@ -225,8 +280,16 @@ h1, h2, h3, h4, .crypto-text {
     border-radius: 14px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     min-height: 0;
+    /* overflow managed per-panel: right-panel scrolls via #scanContent internally */
+    overflow: hidden;
+}
+
+/* Right panel: flex column so #scanContent can fill and scroll */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .panel-header {
@@ -391,7 +454,7 @@ h1, h2, h3, h4, .crypto-text {
 
 .results-matrix {
     display: flex; flex-direction: column;
-    gap: 20px; padding: 18px;
+    gap: 20px; padding: 18px 18px 40px 18px;
 }
 
 .score-crystal {

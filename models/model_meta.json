@@ -1,0 +1,11 @@
+{
+  "model_type": "sgd_classifier",
+  "encoder_type": "sentence_transformer",
+  "encoder_model": "all-MiniLM-L6-v2",
+  "phase": 2,
+  "dataset": "Kaggle 6-Corpus (Enron+Nazario+SpamAssassin+CEAS+Ling+Nigerian Fraud) \u2014 82,486 emails",
+  "embedding_dim": 384,
+  "threshold": 0.3269,
+  "class_weight": "FP-penalised (Legitimate:3.0, Phishing:1.0)",
+  "regularization": "L2 alpha=0.001"
+}

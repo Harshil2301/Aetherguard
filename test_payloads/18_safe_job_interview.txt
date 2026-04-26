@@ -1,0 +1,15 @@
+Hi Harshil,
+
+Thank you for your application for the Software Engineering Intern position at Google.
+
+We were impressed by your background and would like to schedule a technical interview.
+
+Please use the link below to select your preferred interview slot:
+https://hire.google.com/schedule?ref=interview&candidate=hm2026
+
+The interview will be a 45-minute video call covering data structures and system design fundamentals.
+
+Best of luck,
+Emily Chen
+Technical Recruiting
+Google

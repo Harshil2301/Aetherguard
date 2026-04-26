@@ -1,0 +1,21 @@
+From: no-reply@github.com
+To: developer@example.com
+Subject: [GitHub] Your SSH key has been added
+
+Hi developer,
+
+A new SSH key was added to your GitHub account.
+
+Key title: Dell XPS Home
+Added: April 21, 2026 at 10:34 AM UTC
+Fingerprint: SHA256:xL9kKzH3mWt2YjR+4VqPNsUbDc8oEfI1A6gJFwBXeOk
+
+If you added this key, no action is required.
+
+If you did NOT add this key, immediately revoke it and review your account security:
+https://github.com/settings/keys
+
+Questions? Contact GitHub Support: https://support.github.com
+
+Thanks,
+The GitHub Team

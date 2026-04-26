@@ -1,0 +1,12 @@
+Received: from unknown (HELO spoofed.paypal.com) (192.168.1.1)
+From: security@paypal.com
+To: victim@example.com
+Subject: Notice of Account Limitation
+Date: Mon, 20 Apr 2026 12:00:00 -0400
+Authentication-Results: mx.google.com; spf=fail (google.com: domain of security@paypal.com does not designate 192.168.1.1 as permitted sender) smtp.mailfrom=security@paypal.com; dkim=fail header.i=@paypal.com
+Message-ID: <1234567890@spoofed.paypal.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Your PayPal account has been limited. Please click the link to verify:
+http://paypai-verify-secure.xyz/login

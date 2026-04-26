@@ -1,0 +1,22 @@
+From: docusign-service@docusigning-secure.net
+To: victim@company.org
+Subject: [DocuSign] Action Required: Please eSign document before 5 PM today
+Date: Mon, 21 Apr 2026 10:00:00 +0000
+Authentication-Results: spf=fail; dkim=none; dmarc=fail
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+DOCUSIGN - REVIEW AND SIGN
+
+Document: NDA_Final_April2026.pdf
+Sent by: legal@importantclient.com
+Expires: Today at 5:00 PM
+
+This document requires your electronic signature by end of day.
+
+REVIEW DOCUMENT:
+http://docusigning-secure.net/sign?doc=NDA_2026&token=Dx37KhqP&expires=EOD
+
+If you have questions about this document, please contact the sender directly.
+
+DocuSign Electronic Signature Service

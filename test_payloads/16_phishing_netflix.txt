@@ -1,0 +1,16 @@
+Hello,
+
+We noticed someone is trying to access your Netflix account from a new device.
+
+Location: Romania
+Device: Smart TV (Samsung)
+Time: April 21, 2026 at 11:47 PM
+
+If this was you, you can ignore this email.
+
+If this was NOT you, your account may have been compromised. To secure your account and update your payment information, click below:
+http://netflix-account-verify.net/secure?account=1092847&token=nflx2026
+
+Your account will be suspended within 24 hours if we do not hear from you.
+
+Netflix Security

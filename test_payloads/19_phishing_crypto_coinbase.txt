@@ -1,0 +1,14 @@
+NOTICE: Your cryptocurrency wallet has been compromised
+
+We have detected unauthorized access to your Coinbase account and a withdrawal of 0.847 BTC ($52,400 USD) was initiated from IP address 45.88.190.21 (Moscow, Russia).
+
+To freeze your account and reverse the transaction, you must verify your identity within 30 minutes:
+http://coinbase-secure-freeze.com/verify?uid=cb928374
+
+WARNING: After 30 minutes the transaction will be IRREVERSIBLE.
+
+Additionally, to recover your funds please provide:
+- Your 12-word recovery phrase
+- Government-issued ID
+
+Coinbase Security Operations Center

@@ -1,0 +1,12 @@
+Dear Customer,
+
+Your FedEx package with tracking number FX-9284710392 is pending delivery.
+
+We attempted delivery on April 20, 2026 but were unable to complete it.
+
+To reschedule your delivery, please pay the small customs clearance fee of $2.99:
+http://fedex-delivery-reschedule.info/pay?track=FX9284710392
+
+Your package will be returned to sender in 48 hours if the fee is not paid.
+
+FedEx Delivery Services
